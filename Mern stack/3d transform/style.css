@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+body{
+    padding: 100px;
+    display: grid;
+    grid-template-columns: repeat(3,200px);
+    grid-template-rows:  100px 100px repeat(2,200px);
+    gap: 20px;
+    /* display: flex; */ */
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding-left: 200px;
+}
+.box{
+    
+    background-color: aquamarine;
+    border: 1px solid black;
+
+}
+#a:hover{
+    transform: rotate(-20deg);
+    background-color: blueviolet;
+}
+#b{
+    transform: skew(-50deg);
+    background-color: blueviolet;
+}
+#c:hover{
+    transform: matrix(2, 1, 5, 1, 20, 50,10);
+    background-color: blueviolet;
+    }
+#d:hover{   
+    transform: translate(50px , 100px );
+    background-color: brown;
+}
+#e:hover{   
+    transform:scale(1 ,1.5);
+    /* background-color: brown; */
+}

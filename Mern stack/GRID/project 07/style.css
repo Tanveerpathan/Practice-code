@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    background-color: #F0DF87;
+    overflow: hidden;
+    /* padding: 200PX; */
+}
+header{
+    background-color: black;
+    padding: 20px 10px;
+    color: azure;
+    display: flex;
+    justify-content: space-around;
+    /* margin: 50PX; */
+}
+main{
+     margin: 20px;
+    /* height: 100vh; */
+    width: 100vw;
+    /* overflow: hidden; */
+    overflow-x: hidden;
+}
+a{
+    color:azure;
+    text-decoration: none;
+    font-size: 1.60rem;
+    /* font-size: large; */
+    font-family: 'Courier New', Courier, monospace;
+}
+#header_content{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 10px;
+}
+#headeroption{
+    width: 400px;
+    height: auto;
+}
+#heading{
+    font-size: 4rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.line{
+    width: 80%;
+    margin: auto;
+
+}
+footer{
+    background-color: black;
+    padding: 20px 10px;
+}
+#para{
+    margin-top: 25px;
+    width: 500px;
+    margin-bottom: 50px;
+}
+.tilecontent{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    margin-top: 200px; 
+}
+img{
+    height: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+.tiles{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:700px repeat(1,1fr);
+    gap: 10px;
+    margin: 20px;
+    padding: 100px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+#tilehead{
+    margin-top: 20px;
+    font-size:0%;
+
+}
+#titel{
+   margin-left: 7rem;
+   background-color: rgba(223, 230, 233,1.0);
+   padding-bottom: 20PX;
+   /* border-radius: 50%; */
+   border-top-left-radius: 800%;
+}
+#author{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+#contenthead{
+    margin-top: 20px;
+    font-size: 1rem;
+    font-family:Arial, Helvetica, sans-serif
+}
+@media (min-width: 416px) {
+    .body {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
