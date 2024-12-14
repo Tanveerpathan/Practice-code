@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    background-color: #333945;
+}
+.box{
+    background-color: aqua;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    box-shadow: 5 , 5 ,25, 100 , black;
+}
+.boxa{
+    background-color:#E74292;
+    animation: moveRightLeft 3s  infinite alternate;
+
+}
+@keyframes moveRightLeft {
+    from {
+      transform: translateX(-100%);  /* Start position: Box is off-screen to the left */
+    }
+    to {
+      transform: translateX(100%);   /* End position: Box moves to the right */
+    }
+  }
+  
+@keyframes moveLeftRight {
+    from {
+      transform: translateX(-100%);  /* Start position: Box is off-screen to the left */
+    }
+    to {
+      transform: translateX(100%);   /* End position: Box moves to the right */
+    }
+  }
+
+
+.boxb{
+    background-color: #BB2CD9;
+    animation: moveLeftRight 3s  infinite alternate-reverse;
+
+}
+.boxc{
+    background-color: #EA7773;
+    animation: moveRightLeft 3s  infinite alternate;
+
+}
+.boxd{
+    background-color: #2B2B52;
+    animation: moveLeftRight 3s  infinite alternate-reverse;
+
+}
